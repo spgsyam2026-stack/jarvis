@@ -1,0 +1,6 @@
+{
+  "name": "AETHER // OS",
+  "description": "Futuristic personal AI agent command center with multi-provider model routing, real-time voice HUD, tool execution, and Windows 11 desktop readiness.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

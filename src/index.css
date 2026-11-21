@@ -1,0 +1,331 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Outfit", system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+    background-color: #05070c;
+    color: #e2e8f0;
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom thin sci-fi scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.18);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 240, 255, 0.35);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.hud-hairline {
+  border-color: rgba(148, 163, 184, 0.14);
+}
+
+.hud-hairline-cyan {
+  border-color: rgba(0, 240, 255, 0.22);
+}
+
+.hud-glass {
+  background: rgba(10, 15, 26, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.hud-grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* ============================================================================
+   CYBER-DAY (Crisp Cool Ice-Slate Daylight Theme)
+   ============================================================================ */
+:root[data-theme="cyber-day"] {
+  color-scheme: light;
+}
+
+:root[data-theme="cyber-day"],
+:root[data-theme="cyber-day"] body,
+:root[data-theme="cyber-day"] #root {
+  background-color: #eef4fa;
+  color: #0f172a;
+}
+
+:root[data-theme="cyber-day"] .hud-grid-bg {
+  background-color: #eef4fa;
+  background-image:
+    linear-gradient(to right, rgba(2, 132, 199, 0.065) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(2, 132, 199, 0.065) 1px, transparent 1px);
+}
+
+:root[data-theme="cyber-day"] .bg-\[\#05070C\] {
+  background-color: #eef4fa;
+}
+
+:root[data-theme="cyber-day"] .bg-\[\#070B14\],
+:root[data-theme="cyber-day"] .bg-\[\#070B14\]\/85,
+:root[data-theme="cyber-day"] .bg-\[\#080C16\],
+:root[data-theme="cyber-day"] .bg-\[\#080D18\],
+:root[data-theme="cyber-day"] .bg-\[\#08101D\],
+:root[data-theme="cyber-day"] .bg-\[\#090E1A\],
+:root[data-theme="cyber-day"] .bg-\[\#090F1A\] {
+  background-color: rgba(248, 251, 255, 0.94);
+}
+
+:root[data-theme="cyber-day"] .bg-\[\#0A0F1A\],
+:root[data-theme="cyber-day"] .bg-\[\#0A0F1A\]\/60,
+:root[data-theme="cyber-day"] .bg-\[\#0A0F1A\]\/75,
+:root[data-theme="cyber-day"] .bg-\[\#0A0F1A\]\/80,
+:root[data-theme="cyber-day"] .bg-\[\#0A0F1A\]\/85,
+:root[data-theme="cyber-day"] .bg-\[\#0A0F1A\]\/90,
+:root[data-theme="cyber-day"] .bg-\[\#0A0F1A\]\/95,
+:root[data-theme="cyber-day"] .bg-\[\#0B101D\],
+:root[data-theme="cyber-day"] .bg-\[\#0D1424\],
+:root[data-theme="cyber-day"] .hud-glass {
+  background-color: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.06);
+}
+
+:root[data-theme="cyber-day"] .bg-\[\#060911\],
+:root[data-theme="cyber-day"] .bg-\[\#060912\],
+:root[data-theme="cyber-day"] .bg-\[\#060912\]\/75,
+:root[data-theme="cyber-day"] .bg-\[\#060912\]\/80 {
+  background-color: #f1f5f9;
+}
+
+:root[data-theme="cyber-day"] .bg-\[\#101629\]\/90 {
+  background-color: #ede9fe;
+}
+
+:root[data-theme="cyber-day"] .bg-slate-900,
+:root[data-theme="cyber-day"] .bg-slate-800\/60,
+:root[data-theme="cyber-day"] .bg-slate-800\/70 {
+  background-color: #e2e8f0;
+}
+
+:root[data-theme="cyber-day"] .hud-hairline,
+:root[data-theme="cyber-day"] .border-slate-800,
+:root[data-theme="cyber-day"] .border-slate-800\/80,
+:root[data-theme="cyber-day"] .border-slate-800\/70,
+:root[data-theme="cyber-day"] .border-slate-700,
+:root[data-theme="cyber-day"] .border-slate-700\/80 {
+  border-color: rgba(15, 23, 42, 0.14);
+}
+
+:root[data-theme="cyber-day"] .hud-hairline-cyan {
+  border-color: rgba(2, 132, 199, 0.36);
+}
+
+:root[data-theme="cyber-day"] .text-white,
+:root[data-theme="cyber-day"] .text-slate-100,
+:root[data-theme="cyber-day"] .text-slate-200 {
+  color: #0f172a;
+}
+
+:root[data-theme="cyber-day"] .text-slate-300 {
+  color: #1e293b;
+}
+
+:root[data-theme="cyber-day"] .text-slate-400 {
+  color: #475569;
+}
+
+:root[data-theme="cyber-day"] .text-slate-500 {
+  color: #64748b;
+}
+
+:root[data-theme="cyber-day"] .placeholder-slate-500::placeholder {
+  color: #64748b;
+}
+
+:root[data-theme="cyber-day"] .text-\[\#00F0FF\],
+:root[data-theme="cyber-day"] .text-cyan-200,
+:root[data-theme="cyber-day"] .text-cyan-300 {
+  color: #0284c7;
+}
+
+:root[data-theme="cyber-day"] .text-emerald-300,
+:root[data-theme="cyber-day"] .text-emerald-400 {
+  color: #047857;
+}
+
+:root[data-theme="cyber-day"] .text-sky-300 {
+  color: #0369a1;
+}
+
+:root[data-theme="cyber-day"] .text-violet-300,
+:root[data-theme="cyber-day"] .text-violet-400 {
+  color: #6d28d9;
+}
+
+:root[data-theme="cyber-day"] .text-amber-300,
+:root[data-theme="cyber-day"] .text-amber-400 {
+  color: #b45309;
+}
+
+:root[data-theme="cyber-day"] .bg-\[\#00F0FF\] {
+  background-color: #0284c7;
+  color: #ffffff;
+}
+
+:root[data-theme="cyber-day"] .text-\[\#05070C\] {
+  color: #ffffff;
+}
+
+:root[data-theme="cyber-day"] ::-webkit-scrollbar-thumb {
+  background: rgba(15, 23, 42, 0.18);
+}
+
+/* ============================================================================
+   HIGH-CONTRAST (Windows 11 System Accessibility High-Contrast Mode)
+   ============================================================================ */
+:root[data-theme="high-contrast"] {
+  color-scheme: dark;
+}
+
+:root[data-theme="high-contrast"],
+:root[data-theme="high-contrast"] body,
+:root[data-theme="high-contrast"] #root {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+:root[data-theme="high-contrast"] .hud-grid-bg {
+  background-color: #000000;
+  background-image: none;
+}
+
+:root[data-theme="high-contrast"] .bg-\[\#05070C\],
+:root[data-theme="high-contrast"] .bg-\[\#060911\],
+:root[data-theme="high-contrast"] .bg-\[\#060912\],
+:root[data-theme="high-contrast"] .bg-\[\#060912\]\/75,
+:root[data-theme="high-contrast"] .bg-\[\#060912\]\/80,
+:root[data-theme="high-contrast"] .bg-\[\#070B14\],
+:root[data-theme="high-contrast"] .bg-\[\#070B14\]\/85,
+:root[data-theme="high-contrast"] .bg-\[\#080C16\],
+:root[data-theme="high-contrast"] .bg-\[\#080D18\],
+:root[data-theme="high-contrast"] .bg-\[\#08101D\],
+:root[data-theme="high-contrast"] .bg-\[\#090E1A\],
+:root[data-theme="high-contrast"] .bg-\[\#090F1A\],
+:root[data-theme="high-contrast"] .bg-\[\#0A0F1A\],
+:root[data-theme="high-contrast"] .bg-\[\#0A0F1A\]\/60,
+:root[data-theme="high-contrast"] .bg-\[\#0A0F1A\]\/75,
+:root[data-theme="high-contrast"] .bg-\[\#0A0F1A\]\/80,
+:root[data-theme="high-contrast"] .bg-\[\#0A0F1A\]\/85,
+:root[data-theme="high-contrast"] .bg-\[\#0A0F1A\]\/90,
+:root[data-theme="high-contrast"] .bg-\[\#0A0F1A\]\/95,
+:root[data-theme="high-contrast"] .bg-\[\#0B101D\],
+:root[data-theme="high-contrast"] .bg-\[\#0D1424\],
+:root[data-theme="high-contrast"] .hud-glass {
+  background-color: #000000;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+:root[data-theme="high-contrast"] .bg-\[\#101629\]\/90 {
+  background-color: #050505;
+  border-color: #ffff00;
+  border-width: 1.5px;
+}
+
+:root[data-theme="high-contrast"] .hud-hairline,
+:root[data-theme="high-contrast"] .border-slate-800,
+:root[data-theme="high-contrast"] .border-slate-800\/80,
+:root[data-theme="high-contrast"] .border-slate-800\/70,
+:root[data-theme="high-contrast"] .border-slate-700,
+:root[data-theme="high-contrast"] .border-slate-700\/80 {
+  border-color: rgba(255, 255, 255, 0.85);
+}
+
+:root[data-theme="high-contrast"] .hud-hairline-cyan {
+  border-color: #00ffff;
+}
+
+:root[data-theme="high-contrast"] .text-white,
+:root[data-theme="high-contrast"] .text-slate-100,
+:root[data-theme="high-contrast"] .text-slate-200,
+:root[data-theme="high-contrast"] .text-slate-300,
+:root[data-theme="high-contrast"] .text-slate-400 {
+  color: #ffffff;
+}
+
+:root[data-theme="high-contrast"] .text-slate-500 {
+  color: #fde047;
+}
+
+:root[data-theme="high-contrast"] .placeholder-slate-500::placeholder {
+  color: #e2e8f0;
+}
+
+:root[data-theme="high-contrast"] .text-\[\#00F0FF\],
+:root[data-theme="high-contrast"] .text-cyan-200,
+:root[data-theme="high-contrast"] .text-cyan-300,
+:root[data-theme="high-contrast"] .text-sky-300 {
+  color: #00ffff;
+}
+
+:root[data-theme="high-contrast"] .text-emerald-300,
+:root[data-theme="high-contrast"] .text-emerald-400 {
+  color: #00ff88;
+}
+
+:root[data-theme="high-contrast"] .text-amber-300,
+:root[data-theme="high-contrast"] .text-amber-400 {
+  color: #ffff00;
+}
+
+:root[data-theme="high-contrast"] .bg-\[\#00F0FF\] {
+  background-color: #00ffff;
+  color: #000000;
+}
+
+:root[data-theme="high-contrast"] .text-\[\#05070C\] {
+  color: #000000;
+}
+
+:root[data-theme="high-contrast"] button:focus-visible,
+:root[data-theme="high-contrast"] input:focus-visible,
+:root[data-theme="high-contrast"] select:focus-visible,
+:root[data-theme="high-contrast"] textarea:focus-visible,
+:root[data-theme="high-contrast"] a:focus-visible {
+  outline: 2px solid #ffff00;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
